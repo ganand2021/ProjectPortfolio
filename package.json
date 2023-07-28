@@ -1,12 +1,15 @@
 {
   "name": "react-portfolio",
   "version": "0.1.0",
+  "homepage": "http://ganand2021.github.io/ProjectPortfolio",
   "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "predeploy" : "npm run build",
+    "deploy" : "gh-pages -d build"
   },
   "dependencies": {
     "@react-three/drei": "^9.79.3",
@@ -26,5 +29,8 @@
     "reactjs-popup": "^2.0.5",
     "tailwindcss": "3.3.3",
     "three": "^0.154.0"
+  },
+  "devDependencies": {
+    "gh-pages": "^5.0.0"
   }
 }
